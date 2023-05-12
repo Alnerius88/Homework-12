@@ -8,6 +8,7 @@ public class Main {
         System.out.println(scarletStudy.getBookName() + ", " + scarletStudy.getAuthor() + "," + scarletStudy.publicationYear);
         System.out.println(rHoward.getFirstName() +" "+ rHoward.getLastName());
         System.out.println(artConDoyle.getFirstName() + " " + artConDoyle.getLastName());
+        System.out.println("Понедельник был легким.");
 
     }
 }
