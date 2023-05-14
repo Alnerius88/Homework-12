@@ -1,25 +1,46 @@
 public class Book {
-    private final String bookName;
-    private final String Author;
+    private String bookName;
+    private String bookAuthor;
     int publicationYear;
-
-    public Book (String bookName, String Author, int publicationYear) {
+    public Book (String bookName, String bookAuthor, int publicationYear) {
         this.bookName = bookName;
-        this.Author = Author;
+        this.bookAuthor = bookAuthor;
         this.publicationYear = publicationYear;
     }
-
     public String getBookName() {
         return bookName;
     }
-    public String getAuthor() {
-        return Author;
-    }
-
     public int getPublicationYear() {
         return publicationYear;
     }
     public void setPublicationYear (int pubYear) {
         this.publicationYear = pubYear;
     }
+
+
+
+    public String getAuthor () {return bookAuthor; }
+
+
+    public class Author {
+        private String firstName;
+        private String lastName;
+
+        public Author (String firstName, String lastName) {
+            this.firstName = firstName;
+            this.lastName = lastName;
+        }
+        public String getFirstName() {
+            return firstName;
+        }
+        public String getLastName() {
+            return lastName;
+        }
+
+        public final String authorFull = firstName + lastName;
+
+
+    }
+
+
 }
