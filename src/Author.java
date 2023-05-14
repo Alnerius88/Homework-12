@@ -13,7 +13,7 @@ public class Author {
         return lastName;
     }
 
-    public String bookAuthor = firstName + lastName;
+    public String getAuthor = firstName + lastName;
 
     public String getAuthor () {return firstName + lastName;}
 
